@@ -5,6 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        li:not([data-todo-type]){
+            color: green;
+        }
+        li[data-activity-name*="mm"]{
+            background-color: aquamarine;
+        }
+    </style>
 </head>
 
 <body>
@@ -18,9 +26,10 @@
         <li data-todo-type="exercise" data-activity-name="cycling" data-location="outdoor">
             Cycling
         </li>
-        <li data-todo-type="exercise" data-activity-name="swimming" data-location="outdoor">
+        <li data-todo-type="exercise" data-activity-name="rrrrrr" data-location="outdoor">
             Swimming
         </li>
+        <li>Terje</li>
     </ul>
 </body>
 
