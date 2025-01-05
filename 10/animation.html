@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG Path Animasjon</title>
+    <style>
+        .path {
+            fill: none;
+            stroke: #4a90e2;
+            stroke-width: 3;
+            stroke-dasharray: 300;  /* Lengden på pathen */
+            stroke-dashoffset: 300; /* Starter "ute av skjerm" */
+            animation: draw 2s ease-in-out forwards;
+        }
+
+        @keyframes draw {
+            to {
+                stroke-dashoffset: 0;  /* Tegner pathen inn på skjermen */
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2>SVG Path Animation Demo</h2>
+    <svg width="300" height="200" viewBox="0 0 300 200">
+        <path class="path" d="M 10 150 Q 150 0, 290 150" />
+    </svg>
+</body>
+</html>
