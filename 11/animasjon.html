@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bouncing Box Animation</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            border-radius: 10px;
+            animation: bounce 1s infinite ease-in-out;
+        }
+
+        @keyframes bounce {
+            0% {
+                transform: translateY(0) translateX(0);
+                /* Startposisjon */
+            }
+
+            25% {
+                transform: translateY(30px) translateX(0);
+                /* Går ned */
+            }
+
+            50% {
+                transform: translateY(30px) translateX(30px);
+                /* Går til høyre */
+            }
+
+            75% {
+                transform: translateY(0) translateX(30px);
+                /* Går opp */
+            }
+
+            100% {
+                transform: translateY(0) translateX(0);
+                /* Tilbake til start */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+</body>
+
+</html>
