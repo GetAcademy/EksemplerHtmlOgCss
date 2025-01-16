@@ -26,27 +26,34 @@
 
         @keyframes bounce {
             0% {
-                transform: translateX(0) translateY(0);
+                transform: translate(0, 0);
+                background-color: #00ff00;
                 /* Startposisjon */
             }
 
             25% {
-                transform: translateX(0) translateY(30px);
+                transform: translate(0, 30px);
+                background-color: #00cc00;
                 /* Går ned */
             }
 
             50% {
-                transform: translateX(30px) translateY(30px);
+                transform: translate(30px, 30px);
+                background-color: #009900;
                 /* Går til høyre */
             }
 
             75% {
-                transform: translateX(30px) translateY(0);
+                transform: translate(30px, 0);
+                background-color: #006600;
+
                 /* Går opp */
             }
 
             100% {
-                transform: translateX(0) translateY(0);
+                transform: translate(0, 0);
+                background-color: #003300;
+
                 /* Tilbake til start */
             }
         }
